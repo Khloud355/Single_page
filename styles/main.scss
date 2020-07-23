@@ -1,0 +1,177 @@
+$white-color: #fff;
+$dark: #181818;
+$white-p: #868686;
+$thirdColor: #8260e5;
+
+body {
+  background-color: $dark;
+}
+.head {
+  background-image: url("../img/img.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-top: 160px;
+  .head-title {
+    text-align: center;
+    color: $white-color;
+    .par {
+      color: $white-color;
+      margin-bottom: 50px;
+    }
+  }
+  .instractor-pic {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border: 2px solid $white-color;
+    background: $white-color;
+    border-radius: 50%;
+    right: calc(50% - 35px);
+    top: calc(85%);
+  }
+}
+.instractor-info {
+  h5 {
+    margin-top: 50px !important;
+  }
+  color: $white-color;
+
+  i {
+    color: $thirdColor;
+  }
+  span {
+    color: $white-p;
+  }
+  h6 {
+    padding-top: 20px;
+  }
+  p {
+    color: $white-p;
+  }
+  .instractor-content {
+    margin-top: 20px;
+    border: 1px solid $white-p;
+    border-radius: 10px;
+    li {
+      list-style: none;
+      padding: 10px 0;
+      span {
+        color: $white-p;
+      }
+      i {
+        justify-content: space-around;
+        margin: 0 7px;
+      }
+    }
+  }
+  .student-info {
+    @extend .instractor-content;
+  }
+}
+.courses {
+  .owl-carousel {
+    .owl-dots {
+      display: none;
+    }
+    .owl-nav {
+      display: flex;
+      position: relative;
+      button {
+        color: $firstcolor;
+        font-size: 35px;
+        &:hover,
+        &:active {
+          border-color: transparent;
+          background-color: transparent;
+        }
+      }
+      .owl-next {
+        position: absolute;
+        top: -200px;
+        right: -25px;
+        @media (max-width: 540px) {
+          right: -18px;
+        }
+      }
+      .owl-prev {
+        position: absolute;
+        top: -200px;
+        left: -25px;
+        @media (max-width: 540px) {
+          left: -18px;
+        }
+      }
+    }
+  }
+  .card {
+    background-color: $dark;
+    .card-head {
+      position: relative;
+      .relat {
+        position: absolute;
+        top: 20px;
+        padding: 0 10px;
+
+        .btn {
+          background-color: $thirdColor;
+          color: $firstcolor;
+          font-size: 12px;
+        }
+        span {
+          font-size: 16px;
+          position: absolute;
+          left: 230px;
+          @media (max-width: 1199px) {
+            left: 185px;
+          }
+          @media (max-width: 400px) {
+            left: 136px;
+          }
+        }
+      }
+      .icon {
+        position: absolute;
+        top: 20px;
+        padding: 0 10px;
+        left: 222px;
+        span {
+          font-size: 16px;
+        }
+        @media (max-width: 1199px) {
+          left: 177px;
+        }
+        @media (max-width: 400px) {
+          left: 126px;
+        }
+      }
+    }
+    .card-subtitle {
+      color: $forthColor;
+      font-size: 12px;
+    }
+    .card-title {
+      color: $firstcolor;
+      font-weight: 400;
+      font-size: 15px;
+    }
+    .rate {
+      padding-bottom: 10px;
+      span {
+        color: $forthColor;
+        position: relative;
+        bottom: 22px;
+        float: right;
+        font-size: 14px;
+      }
+    }
+    .card-text {
+      border-top: 1px solid $borderColor;
+      padding: 10px 0;
+      font-size: 15px;
+    }
+  }
+}

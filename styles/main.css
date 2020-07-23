@@ -1,0 +1,215 @@
+body {
+  background-color: #181818;
+}
+
+.head {
+  background-image: url("../img/img.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-top: 160px;
+}
+
+.head .head-title {
+  text-align: center;
+  color: #fff;
+}
+
+.head .head-title .par {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.head .instractor-pic {
+  content: "";
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border: 2px solid #fff;
+  background: #fff;
+  border-radius: 50%;
+  right: calc(50% - 35px);
+  top: calc(85%);
+}
+
+.instractor-info {
+  padding-top: 15px;
+  color: #fff;
+}
+
+.instractor-info i {
+  color: #8260e5;
+}
+
+.instractor-info span {
+  color: #868686;
+}
+
+.instractor-info h6 {
+  padding-top: 20px;
+}
+
+.instractor-info p {
+  color: #868686;
+}
+
+.instractor-info .instractor-content, .instractor-info .student-info {
+  margin-top: 20px;
+  border: 1px solid #868686;
+  border-radius: 10px;
+}
+
+.instractor-info .instractor-content li, .instractor-info .student-info li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.instractor-info .instractor-content li span, .instractor-info .student-info li span {
+  color: #868686;
+}
+
+.instractor-info .instractor-content li i, .instractor-info .student-info li i {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 7px;
+}
+
+.courses .owl-carousel .owl-dots {
+  display: none;
+}
+
+.courses .owl-carousel .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.courses .owl-carousel .owl-nav button {
+  color: #fff;
+  font-size: 35px;
+}
+
+.courses .owl-carousel .owl-nav button:hover, .courses .owl-carousel .owl-nav button:active {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.courses .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: -200px;
+  right: -25px;
+}
+
+@media (max-width: 540px) {
+  .courses .owl-carousel .owl-nav .owl-next {
+    right: -18px;
+  }
+}
+
+.courses .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: -200px;
+  left: -25px;
+}
+
+@media (max-width: 540px) {
+  .courses .owl-carousel .owl-nav .owl-prev {
+    left: -18px;
+  }
+}
+
+.courses .card {
+  background-color: #181818;
+}
+
+.courses .card .card-head {
+  position: relative;
+}
+
+.courses .card .card-head .relat {
+  position: absolute;
+  top: 20px;
+  padding: 0 10px;
+}
+
+.courses .card .card-head .relat .btn {
+  background-color: #8260e5;
+  color: #fff;
+  font-size: 12px;
+}
+
+.courses .card .card-head .relat span {
+  font-size: 16px;
+  position: absolute;
+  left: 230px;
+}
+
+@media (max-width: 1199px) {
+  .courses .card .card-head .relat span {
+    left: 185px;
+  }
+}
+
+@media (max-width: 400px) {
+  .courses .card .card-head .relat span {
+    left: 136px;
+  }
+}
+
+.courses .card .card-head .icon {
+  position: absolute;
+  top: 20px;
+  padding: 0 10px;
+  left: 222px;
+}
+
+.courses .card .card-head .icon span {
+  font-size: 16px;
+}
+
+@media (max-width: 1199px) {
+  .courses .card .card-head .icon {
+    left: 177px;
+  }
+}
+
+@media (max-width: 400px) {
+  .courses .card .card-head .icon {
+    left: 126px;
+  }
+}
+
+.courses .card .card-subtitle {
+  color: #868686;
+  font-size: 12px;
+}
+
+.courses .card .card-title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.courses .card .rate {
+  padding-bottom: 10px;
+}
+
+.courses .card .rate span {
+  color: #868686;
+  position: relative;
+  bottom: 22px;
+  float: right;
+  font-size: 14px;
+}
+
+.courses .card .card-text {
+  border-top: 1px solid #555;
+  padding: 10px 0;
+  font-size: 15px;
+}
+/*# sourceMappingURL=main.css.map */
